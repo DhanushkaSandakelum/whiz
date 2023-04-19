@@ -1,0 +1,589 @@
+.post {
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(252, 252, 252, 0.377);
+    transition: .2s all;
+    -webkit-box-shadow: -2px 2px 15px -4px #5c5c5c; 
+    box-shadow: -2px 2px 15px -4px #5c5c5c;   
+}
+
+.post:hover {
+    /* cursor: pointer;
+    transform: scale(1.01); */
+}
+
+.post-header {
+    height: fit-content;
+}
+
+.post-header img {
+    width: 100%;
+}
+
+.post-link {
+    text-decoration: none;
+    color: inherit;
+    transition: .2s all;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.post-details {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-top: 1px solid rgb(219, 219, 219);
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.post-details .profpic {
+    padding: 10px;
+}
+
+.post-details .profpic img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.post-details .profpic-sub {
+    padding: 10px 10px 10px 0;
+}
+
+.post-details .profpic-sub img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.post-details .postedby {
+    width: fit-content;
+}
+
+.post-details .verified {
+    padding: 10px 0 15px 5px;
+}
+
+.post-details .verified img {
+    height: 15px;
+}
+
+
+.post .postedat {
+    /* background-color: rgb(233, 233, 233); */
+    /* text-align: right;
+    padding-right: 10px; */
+    padding-left: 15px;
+}
+
+
+.post-body {    
+    /* padding: 5px; */
+}
+
+.post-body .title {
+    font-size: medium;
+    font-weight: 600;
+    padding: 10px 5px 5px 5px;
+}
+
+.post-body .postedby {
+    color: gray;
+    padding: 0px 5px 10px 5px;
+}
+
+.post-body .degree {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px;
+  }
+
+
+.post-body .progress {
+    padding: 10px;
+}
+
+.post-body .progress .applied-bar {
+    width: 100%;
+    height: 20px;
+}
+
+.post-body .progress .text {
+    display: flex;
+    flex-direction: row;    
+    font-weight: 600;
+}
+
+.post-body .progress .text .applied {
+    padding-right: 5px;
+}
+
+.post-body .progress .text .capacity {
+    color: gray;
+}
+
+
+.post-body .price {
+    font-size: 20px;
+    padding: 5px;
+    color: rgb(80, 80, 80);
+}
+
+/* stats */
+.post-body .stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid rgb(219, 219, 219);
+}
+
+.post-body .stats {
+    height: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.post-body .stats img {
+    height: 20px;
+}
+
+.post-body .stats .stars {
+    position: relative;
+    top: -2px;
+    filter: grayscale(100%);
+}
+
+.post-body .stats .stars.active {
+    filter: grayscale(0%);
+}
+
+.post-body .stats .stars img {
+    height: 17px;
+}
+
+.stats .ups-count {
+    color: green;
+    padding-right: 15px;
+}
+
+.stats .downs-count {
+    color: red;
+    padding-right: 15px;
+}
+
+.stats .comments-count {
+    color: #333;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.stats .rate {
+    color: rgb(209, 178, 0);
+}
+
+.post-body .stats .rate {
+    padding-left: 10px;
+}
+
+
+.post-body .stats .enrollment{
+    padding-left: 10px;
+    color: #333;
+    font-size: 12px;
+}
+
+/* post footer */
+.post-footer {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: #e4e4e4;
+    padding: 5px;
+}
+
+.post-footer img {
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.post-footer-input {
+    margin-left: 20px;
+}
+
+.post-footer input[type=text] {
+    width: 100%;
+    height: 40px;
+}
+
+.post-footer-commentbtn {
+    /* background-color: #b1b1b1; */
+}
+
+#comment {    
+    /* margin-left: 10px; */
+}
+
+.post-footer-commentbtn {
+    margin-left: 5px;
+}
+
+.post-footer-commentbtn:hover {
+    background-color: #b3b3b3;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: .2s all;
+}
+
+.post-footer-text {
+    line-height: 40px;
+    vertical-align: middle;
+    font-size: 15px;
+    margin-right: 5px;
+    padding-left: 5px;
+}
+
+.post-footer-sharebtn {
+    width: 100%;
+    text-align: right;
+}
+
+#share {    
+    margin-left: 20px;
+}
+
+.post-footer button {
+    display: flex;
+    flex-direction: row;
+    background: none;
+	color: inherit;
+	border: none;
+    cursor: pointer;
+    border-radius: 5px
+}
+
+.post-footer-likebtn:hover {
+    background-color: #b3b3b3;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: .2s all;
+}
+
+.post-footer-likebtn.active {    
+    background-color: #018749;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: .2s all;
+}
+
+.post-footer-dislikebtn:hover {
+    background-color: #b3b3b3;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: .2s all;
+}
+
+.post-footer-dislikebtn.active {
+    background-color: #A52A2A;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: .2s all;
+}
+
+
+
+/* SHOW MORE POSTS */
+.post-back {
+    /* display: inline-block;
+    position: relative;
+    top: 70px;
+    left: 10px; */
+}
+
+.post-control-buttons {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+}
+
+.post-header-editbtn {
+    background-color: #1266F1;
+    color: #f1efef;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 50px;
+    margin: 5px;
+}
+
+.post-header-deletebtn {
+    background-color: #F93154;
+    color: #f1efef;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 50px;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 1124px) {
+    .post {
+        width: 100%;
+    }  
+}
+
+
+
+/* POST ADD */
+.post-creator {
+    width: 50%;
+    height: fit-content;
+    background-color: #f5f5f5;
+    border: 2px solid #c7c7c7;
+    border-radius: 5px;
+}
+.post-creator .post-creator-image img {
+    width: 100%;
+}
+
+.post-creator-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.post-creator-title input[type=text] {
+    background-color: #f5f3f3;
+    border: none;
+    font-size: 22px;
+}
+
+.post-creator-subtitle input[type=text] {
+    background-color: #f5f3f3;
+    border: none;
+    font-size: 17px;
+}
+
+.post-creator .image-select {
+    height: 30px;
+    line-height: 30px;
+    margin: auto 5px auto 0;
+}
+
+.post-creator-title .image-select img {
+    width: 30px;
+    transition: .1s all;
+}
+
+.post-creator-title .image-select img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.post-creator-content textarea {
+    background-color: #f5f5f5;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.post-creator-content textarea:focus {
+    outline: 0;
+}
+
+/* Set a style for the submit button */
+.post-creator-submit {
+    background-color: #246f7c;
+    color: #e4e4e4;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.post-creator-submit:hover {
+    opacity: 1;
+}
+
+.interaction-detail {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.interaction-detail #capacity {
+    margin-left: 10px;
+    padding: 10px;
+    width: 100px;
+    font-size: 15px;
+}
+
+/* job apply */
+.post .poles {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,0.1) 0%, rgba(253,29,29,0.1) 50%, rgba(252,176,69,0.2) 100%);
+    padding: 5px 0 5px 0;    
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.post .poles .pole-prg-bar {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.post .poles .pole-prg-bar progress {
+    width: 100%;
+    height: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.post .poles .pole-prg-bar progress::-webkit-progress-value {
+    -webkit-appearance: none;    
+    border-radius: 3px;
+}
+
+/* advertisement */
+.post .poles .pole-prg-bar.bar1 progress::-webkit-progress-value {    
+    background-color: rgb(150, 0, 150);
+}
+
+/* banner */
+.post .poles .pole-prg-bar.bar2 progress::-webkit-progress-value {    
+    background-color: rgb(243, 147, 3);
+}
+
+/* poster */
+.post .poles .pole-prg-bar.bar3 progress::-webkit-progress-value {    
+    background-color: rgb(0, 163, 136);
+}
+
+.post .poles .pole-prg-bar progress[value]::-webkit-progress-bar {
+    background-color: rgb(233, 195, 225);
+    border-radius: 3px;
+}
+
+.post .poles .pole-prg-bar .percentage {
+    line-height: 20px;
+    vertical-align: middle;
+    width: 30px;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(83, 74, 74);
+}
+
+.post .poles .text {
+    padding: 0 5px 5px 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.post .poles .text .applied {
+    padding-right: 5px;
+    font-weight: 600;
+}
+
+.post .poles .text .capacity {
+    color: gray;
+    font-weight: 600;
+}
+
+
+.post .poles .interation {
+    padding: 2px 10px 5px 10px;
+}
+
+.post .poles .interation button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-weight: 600;
+    color: #f3f3f3;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 98%);
+    transition: .2s all;
+}
+
+.post .poles .interation.applied button {
+    background: rgb(196, 196, 196);
+    background-color: rgb(196, 196, 196);
+}
+
+.post .poles .interation button:hover {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* session link */
+.sessionlink-container {
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(221, 221, 221);
+}
+
+.sessionlink-container .title {
+    background-color: rgb(236, 236, 236);
+    line-height: 30px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.sessionlink-container .body {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.sessionlink-container .schedule {
+    display: flex;
+    flex-direction: row;
+}
+
+.sessionlink-container .schedule .date {
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(180, 209, 181);
+    align-self: center;
+}
+
+.sessionlink-container .schedule .time {
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(206, 206, 206);
+    align-self: center;
+}
+
+/* pay area button */
+.pay-area button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-weight: 600;
+    color: #f3f3f3;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 98%);
+    transition: .2s all;
+}
+
+.pay-area button:hover {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1124px) {
+    .post-creator {
+        width: 100%;
+    }  
+}

@@ -1,0 +1,99 @@
+/* If CSS didn't apply try Ctrl+F5 clear cache and then reload the browser again*/
+/* pages */
+@import url('pages/index-styles.css');
+@import url('pages/coursesPage-style.css');
+@import url('pages/std_CV-styles.css');
+@import url('pages/gov-course-list.css');
+@import url('pages/communityThread-style.css');
+@import url('pages/seeMore-style.css');
+
+/* seperate component styles */
+@import url('components/topnav.css');
+@import url('components/form.css');
+@import url('components/sidebar.css');
+@import url('components/noticesbar.css');
+@import url('components/dashboard.css');
+@import url('components/bottomnav.css');
+@import url('components/buttons.css');
+@import url('components/mycards.css');
+@import url('components/paymentGateway/payment-styles.css');
+
+/* comprehnsive component styles */
+@import url('components/fileUpload/fileUpload_styles.css');
+@import url('components/imageUpload/imageUpload-styles.css');
+@import url('components/captcha/captcha-styles.css');
+@import url('components/notificationAlert/notificationAlert-styles.css');
+@import url('components/commentSystem/comment-styles.css');
+@import url('components/ratingSystem/ratingsystem.css');
+@import url('components/posts/posts-styles.css');
+@import url('components/posts/banner-styles.css');
+@import url('components/posts/poster-styles.css');
+@import url('components/posts/advertisement-styles.css');
+@import url('components/posts/coursepost-styles.css');
+@import url('components/crousels/slideshow_styles.css');
+
+/* Utilities - [EXPERIMENTAL] */
+@import url('utilities/responsive_grid_layout.css');
+
+/* Lists */
+
+/* Cards */
+@import url('cards/select-stream-card.css');
+@import url('cards/recommend-stream-cards.css');
+@import url('cards/course-card.css');
+
+/* profiles */
+@import url('profiles/student-profile.css');
+@import url('profiles/professionalGuider-profile.css');
+@import url('profiles/organization-profile.css');
+@import url('profiles/govUniversity-profile.css');
+
+/* profile statistics and connecitons */
+@import url('profileStatsAndConnections/profile-statistics-and-connections-styles.css');
+
+/* settings */
+@import url('settings/settings.css');
+
+/* review system */
+@import url('reviews/review.css');
+@import url('reviews/reviewspopup.css');
+
+@import url('Admin_style.css');
+
+
+/* fonts */
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(fonts/poppins/Poppins-Regular.ttf);
+}
+
+:root {
+    --main-background-color: #f8f9fa;
+    /* --main-background-color: rgb(94, 61, 0); */
+}
+
+/* global styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins-Regular;
+    font-size: small;
+    background-color: var(--main-background-color);
+    text-align: left;
+}
+
+hr {
+    /* border: solid 1px rgb(187, 187, 187); */
+    margin: 5px;
+    /* color: rgb(145, 145, 145); */
+    background-color: rgb(187, 187, 187);
+}
+
+/* Common text stylings */
+.red-text {
+    color: red;
+    font-weight: 600;
+}

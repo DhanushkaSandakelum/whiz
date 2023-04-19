@@ -1,0 +1,203 @@
+.advertisement {
+    width: 280px;
+    border: 1px solid rgb(219, 219, 219);
+    transition: .1s all;
+}
+
+.advertisement:hover {
+    cursor: pointer;
+    transform: scale(1.005);
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.advertisement .pic img {
+    width: 280px;
+    height: 200px;
+}
+
+.advertisement .user-pic {
+    position: relative;
+    height: 0;
+    top: -50px;
+    left: 5px;
+}
+
+.advertisement .user-pic img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 1);
+}
+
+.advertisement .advertisement-body .title {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.advertisement .advertisement-body .postedby {
+    padding-left: 5px;
+    color: rgb(78, 78, 78);
+}
+
+.advertisement .advertisement-body .postedat {
+    padding: 3px 5px 3px 5px;
+    font-size: 12px;
+    color: rgb(46, 38, 38);
+    background-color: rgb(235, 235, 235);
+}
+
+.advertisement .advertisement-body .price {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 0 10px 5px;
+    color: rgb(78, 78, 78);
+}
+
+.advertisement .poles {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,0.1) 0%, rgba(253,29,29,0.1) 50%, rgba(252,176,69,0.2) 100%);
+    padding: 5px 0 5px 0;    
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.advertisement .poles .pole-prg-bar {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.advertisement .poles .pole-prg-bar progress {
+    width: 100%;
+    height: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.advertisement .poles .pole-prg-bar progress::-webkit-progress-value {
+    -webkit-appearance: none;    
+    background-color: rgb(150, 0, 150);
+    border-radius: 3px;
+}
+
+.advertisement .poles .pole-prg-bar progress[value]::-webkit-progress-bar {
+    background-color: rgb(233, 195, 225);
+    border-radius: 3px;
+}
+
+.advertisement .poles .pole-prg-bar .percentage {
+    line-height: 20px;
+    vertical-align: middle;
+    width: 30px;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(83, 74, 74);
+}
+
+.advertisement .poles .text {
+    padding: 0 5px 5px 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.advertisement .poles .text .applied {
+    padding-right: 5px;
+    font-weight: 600;
+}
+
+.advertisement .poles .text .capacity {
+    color: gray;
+    font-weight: 600;
+}
+
+
+.advertisement .poles .interation {
+    padding: 2px 10px 5px 10px;
+}
+
+.advertisement .poles .interation button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-weight: 600;
+    color: #f3f3f3;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 98%);
+    transition: .2s all;
+}
+
+.advertisement .poles .interation.applied button {
+    background: rgb(196, 196, 196);
+    background-color: rgb(196, 196, 196);
+}
+
+.advertisement .poles .interation button:hover {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.advertisement .advertisement-stats {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    vertical-align: middle;
+    border-top: 1px solid rgb(219, 219, 219);
+    padding-top: 5px;
+    background-color: rgb(235, 235, 235);
+}
+
+.advertisement .advertisement-stats img {
+    position: relative;
+    top: 2px;
+}
+
+.advertisement .advertisement-stats .ups img {
+    width: 15px;
+    margin: 0 auto;
+}
+
+.advertisement .advertisement-stats .ups-count {
+    padding: 0 5px 0 2px;    
+    color: green;
+}
+
+.advertisement .advertisement-stats .downs img {
+    width: 15px;
+}
+
+.advertisement .advertisement-stats .downs-count {
+    padding: 0 5px 0 2px;    
+    color: red;
+}
+
+.advertisement .advertisement-stats .comments img {
+    width: 15px;
+}
+
+.advertisement .advertisement-stats .comments-count {
+    padding: 0 5px 0 2px;    
+    color: black;
+}
+
+.advertisement .advertisement-stats .rate {    
+    color: rgb(209, 178, 0);
+    padding: 0 3px 0 3px;
+}
+
+.advertisement .advertisement-stats .rate-star img {
+    width: 15px;
+    filter: grayscale(100%);
+}
+
+.advertisement .advertisement-stats .rate-star.active img {
+    width: 15px;
+    filter: grayscale(0%);
+}
+
+.advertisement .advertisement-stats .reviews {
+    color: #333;
+    padding-left: 5px;
+}

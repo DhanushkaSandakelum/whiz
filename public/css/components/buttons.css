@@ -1,0 +1,361 @@
+:root {
+    --btn1-bg-color: #1266F1;
+    --btn1-bg-color-hover: #135acc;
+    --btn1-color: #FBFBFB;
+
+    --btn2-bg-color: #B23CFD;
+    --btn2-bg-color-hover: #9d30e0;
+    --btn2-color: #FBFBFB;
+
+    --btn2-dis-bg-color: #a5a5a5;
+    --btn2-dis-bg-color-hover: #7e7e7e;
+    --btn2-dis-color: #3d3d3d;
+
+    --btn3-bg-color: #00B74A;
+    --btn3-bg-color-hover: #028135;
+    --btn3-color: #FBFBFB;
+
+    --btn4-bg-color: #F93154;
+    --btn4-bg-color-hover: #bd223c;
+    --btn4-color: #FBFBFB;
+
+    --btn5-bg-color: #FFA900;
+    --btn5-bg-color-hover: #ac7303;
+    --btn5-color: #FBFBFB;
+
+    --btn6-bg-color: #39C0ED;
+    --btn6-bg-color-hover: #2285a7;
+    --btn6-color: #FBFBFB;
+
+    --btn7-bg-color: #e2e2e2;
+    --btn7-bg-color-hover: #d3d2d2;
+    --btn7-color: #262626;
+
+    --btn8-bg-color: #262626;
+    --btn8-bg-color-hover: #575656;
+    --btn8-color: #FBFBFB;
+
+    --btn9-bg-color: #22072e;
+    --btn9-bg-color-hover: #2a0a53;
+    --btn9-color: #FBFBFB;
+}
+
+.upper-button-area {
+    flex-direction: row;
+}
+
+.notice-btn {
+    background-color: #00B74A;
+    color: var(--btn2-color);
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 5px;
+    text-align: center;
+    transition: .2s all;
+    font-size: 12px;
+}
+
+.notice-btn:hover {
+    background-color: #007730;
+}
+
+.filter-btn {
+    background-color: #00B74A;
+    color: var(--btn2-color);
+    padding: 8.5px 20px;
+    margin: 0px 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    transition: .2s all;
+    font-size: 12px;
+}
+
+.filter-btn:hover {
+    background-color: #007730;
+}
+
+.search-btn {
+    background-color: #00692a;
+    color: var(--btn2-color);
+    padding: 8.5px 20px;
+    margin: 0px 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    transition: .2s all;
+    font-size: 12px;
+}
+
+.search-btn:hover {
+    background-color: #004b1e;
+}
+
+.btn1 {
+    background-color: var(--btn1-bg-color);
+    color: var(--btn1-color);
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    opacity: 0.9;
+    transition: .2s all;
+}
+
+.btn1:hover {
+    background-color: var(--btn1-bg-color-hover);
+    border-radius: 5px;
+}
+
+.btn1-small {
+    background-color: var(--btn1-bg-color);
+    color: var(--btn1-color);
+    padding: 8px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    opacity: 0.9;
+    transition: .2s all;
+}
+
+.btn1-small:hover {
+    background-color: var(--btn1-bg-color-hover);
+    border-radius: 5px;
+}
+
+.btn1-round {
+    background-color: var(--btn1-bg-color);
+    color: var(--btn1-color);
+    padding: 16px 0px;
+    margin: 8px 10;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    /* width: fit-content; */
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+.btn1-round:hover {
+    background-color: var(--btn1-bg-color-hover);
+}
+
+.btn2 {
+    background-color: var(--btn2-bg-color);
+    color: var(--btn2-color);
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    opacity: 0.9;
+}
+
+.btn2:hover {
+    background-color: var(--btn2-bg-color-hover);
+}
+
+.btn2.disabled {
+    background-color: var(--btn2-dis-bg-color);
+    color: var(--btn2-color);
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    opacity: 0.9;
+}
+
+.btn2.disabled:hover {
+    background-color: var(--btn2-dis-bg-color-hover);
+}
+
+.btn3 {
+    background-color: var(--btn3-bg-color);
+    color: var(--btn3-color);
+    padding: 16px 20px;
+    /* margin: 8px 0; */
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+.btn3:hover {
+    background-color: var(--btn3-bg-color-hover);
+}
+
+.btn4 {
+    background-color: var(--btn4-bg-color);
+    color: var(--btn4-color);
+    padding: 16px 20px;
+    /* margin: 8px 0; */
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    opacity: 0.9;
+}
+
+.btn4:hover {
+    background-color: var(--btn4-bg-color-hover);
+}
+
+.btn4-small {
+    background-color: var(--btn4-bg-color);
+    color: var(--btn4-color);
+    padding: 0px 4px;
+    /* margin: 8px 0; */
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    opacity: 0.9;
+}
+
+.btn4-small:hover {
+    background-color: var(--btn4-bg-color-hover);
+}
+
+.btn5 {
+    background-color: var(--btn5-bg-color);
+    color: var(--btn5-color);
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    opacity: 0.9;
+}
+
+.btn5:hover {
+    background-color: var(--btn5-bg-color-hover);
+}
+
+.btn6 {
+    background-color: var(--btn6-bg-color);
+    color: var(--btn6-color);
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    opacity: 0.9;
+}
+
+.btn6:hover {
+    background-color: var(--btn6-bg-color-hover);
+}
+
+.btn7 {
+    background-color: var(--btn7-bg-color);
+    color: var(--btn7-color);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    opacity: 0.9;
+}
+
+.btn7:hover {
+    background-color: var(--btn7-bg-color-hover);
+}
+
+.btn7-round {
+    background-color: var(--btn7-bg-color);
+    color: var(--btn7-color);
+    padding: 16px 0px;
+    margin: 8px 10;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    /* width: fit-content; */
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+.btn7-round:hover {
+    background-color: var(--btn7-bg-color-hover);
+}
+
+.btn8 {
+    background-color: var(--btn8-bg-color);
+    color: var(--btn8-color);
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    opacity: 0.9;
+}
+
+.btn8:hover {
+    background-color: var(--btn8-bg-color-hover);
+}
+
+.btn9 {
+    background-color: var(--btn9-bg-color);
+    color: var(--btn9-color);
+    padding: 16px 20px;
+    margin: 4px 0;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    opacity: 0.9;
+    border-radius: 3px;
+}
+
+.btn9:hover {
+    background-color: var(--btn9-bg-color-hover);
+}
+
+/* toggle button */
+.toggle {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 25px;
+    border-radius: 50px;
+    background: rgb(204, 204, 204);
+    transition: 0.2s;
+    cursor: pointer;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0, 0.1),
+                inset 0 8px 8px rgba(0, 0, 0, 0, 0.1),
+                inset 0 -4px -4px rgba(0, 0, 0, 0, 0.1);
+}
+
+.toggle.active {
+    background: rgb(211, 173, 117);
+}
+
+.toggle .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(to bottom, rgb(156, 156, 156), rgb(122, 122, 122));
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5),
+                inset 0 1px 4px rgba(255, 255, 255, 0.2),
+                inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+}
+
+.toggle.active .indicator {
+    left: 25px;
+    background: linear-gradient(to bottom, rgb(199, 120, 2), rgb(185, 45, 2));
+}

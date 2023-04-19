@@ -1,0 +1,468 @@
+:root{
+    --form-container-background-color: white;
+    --input-field-background-color: #f1f1f1;
+    --input-field-focus-background-color: #fcf0e8;
+    --form-hr-border-color: #f1f1f1;
+    --form-submit-button-background-color: #db7e31;
+    --form-submit-button-color: white;
+    --form-skip-button-background-color: gray;
+    --form-skip-button-color: white;
+    --form-next-button-background-color: #db7e31;
+    --form-next-button-color: white;
+    --form-actor-button-background-color: #db7e31;
+    --form-actor-button-color: white;
+    --form-link-color: dodgerblue;
+    --content-background-color: #f1f1f1;
+    --form-invalid-color: #dc3545;
+
+    --form-flash-background-color: #bdecc7;
+    --form-flash-color: #003a0e;
+    --form-flash-border-color: #007e1d;
+
+    --form-flash-warning-background-color: #ecbdbd;
+    --form-flash-warning-color: #3a0000;
+    --form-flash-warning-border-color: #7e0000;
+
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* Add padding to containers */
+.form-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 16px;
+    background-color: var(--form-container-background-color);
+    /* width: 26%; */
+    width: 400px;
+    box-shadow: 0 4px 8px 0 var(--box-shadow-color);
+    border: 1px solid #d3d3d3;
+}
+
+
+/* logo */
+.logo {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.logo img{
+    height: 80px;
+    width: 80px;
+    transition: .2s all;
+}
+
+.logo img:hover {
+    height: 90px;
+    width: 90px;
+}
+
+
+
+/* Full width input fields */
+input[type=text], input[type=number], input[type=password]  {
+    /* width: 100%;
+    padding: 16px;
+    display: inline-block;
+    border: none;
+    background: var(--input-field-background-color);
+    border-radius: 3px; */
+    border: 1px solid #d5d2d2;
+    border-radius: 5px;
+    width: 100%;
+    height: 43px;
+    padding-top: 13px;
+    padding-left: 15px;
+    font-size: 15px;
+    outline: none;
+    display: block;
+    /* margin-top: 5px; */
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
+    /* background-color: var(--input-field-focus-background-color); */
+    border: 1px solid #db7e31;
+}
+
+label{
+    position: relative;
+    top: -22px;
+    left: 20px;
+    font-size: 15px;
+    color: #555;
+    pointer-events: none;
+    transition: .2s all;
+    display: inline-block;
+    width: 100%;
+    height: 8px;
+    line-height: 8px;
+    vertical-align: middle;
+}
+
+.bottom-content {
+    /* margin-top: -15px; */
+    margin-left: 10px;
+}
+
+input[type=text]:focus + label, input[type=password]:focus + label, input[type=number]:focus + label,
+input[type=text]:not(:placeholder-shown) + label, input[type=password]:not(:placeholder-shown) + label, input[type=number]:not(:placeholder-shown) + label{
+    top: -45px;
+    left: 15px;
+    width: auto;
+    height: auto;
+    background: #fff;
+    padding: 0 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #db7e31;
+}
+
+/* password show / hide eye for password*/
+.form-container .password-area {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.form-container .toggle-password {
+    cursor: pointer;
+    text-align: center;
+    opacity: 0.8;
+    position: relative;
+    top: 10px;
+}
+
+.form-container .toggle-password.active .hide-password-eye {
+    display: none;
+}
+
+.form-container .toggle-password.active .show-password-eye {
+    display: inline;
+}
+
+.form-container .toggle-password .show-password-eye {
+    display: none;
+}
+
+/* password show / hide eye for confirm password*/
+.form-container .toggle-confirm-password {
+    cursor: pointer;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.form-container .toggle-confirm-password.active .hide-password-eye {
+    display: none;
+}
+
+.form-container .toggle-confirm-password.active .show-password-eye {
+    display: inline;
+}
+
+.form-container .toggle-confirm-password .show-password-eye {
+    display: none;
+}
+
+/* password policies */
+.form-validation {
+    padding-left: 0.5rem;
+    transition: 0.2 all;
+    font-size: 0.8rem;
+}
+
+.form-validation.active {
+    opacity: 1;
+    height: auto;
+}
+
+.form-validation > div {
+    opacity: 0.5;
+}
+
+.form-validation div img {
+    opacity: 0;
+}
+
+.form-validation > div.active {
+    opacity: 1;
+    font-weight: 600;
+    color: #28a745;
+}
+
+.form-validation > div.active img{
+    opacity: 1;
+}
+
+/* form hr */
+.form-hr {
+    border: 1px solid var(--form-hr-border-color);
+    margin-bottom: 15px;
+}
+
+.form-hr-intermediate {
+    border: 0.5px solid rgb(230, 227, 227);
+    border-radius: 0.5rem;
+}
+
+/* bold texts */
+.form-bold {
+    margin: 16px 0 5px 0;
+    font-weight: bold;
+    display: inline-block;
+    border: none;
+    color: #555;
+}
+
+
+/* Set a style for the submit button */
+.form-submit {
+    background-color: var(--form-submit-button-background-color);
+    color: var(--form-submit-button-color);
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 3px;
+}
+
+.form-submit:hover {
+    opacity: 1;
+}
+
+/* Set a style for the skip button */
+.form-skip-button {
+    background-color: var(--form-skip-button-background-color);
+    color: var(--form-skip-button-color);
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 49%;
+    opacity: 0.9;
+}
+
+.form-skip-button:hover {
+    opacity: 1;
+}
+
+/* Set a style for the next button */
+.form-next-button {
+    background-color: var(--form-next-button-background-color);
+    color: var(--form-next-button-color);
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.form-next-button:hover {
+    opacity: 1;
+}
+
+/* Set a style for the actor button */
+.form-actor-button {
+    background-color: var(--form-actor-button-background-color);
+    color: var(--form-actor-button-color);
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 49%;
+    opacity: 0.9;
+    border-radius: 3px;
+}
+
+.form-actor-button:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+.form-link {
+    color: var(--form-link-color);
+    text-decoration: none;
+    font-size: small;
+}
+
+/* Set gray bg color and center the content in sign in */
+.content {
+    background-color: var(--content-background-color);
+    text-align: center;
+}
+
+
+/* Form table */
+.form-table {
+    width: 100%;
+}
+
+tr {
+    height: 25px;
+}
+
+th {
+    font-size: small;
+    text-align: left;
+}
+
+/* Invalid message */
+.form-invalid {
+    color: var(--form-invalid-color);
+    /* margin: 0 0 0 0;
+    position: relative;
+    top: -17px;
+    left: 5px; */
+    position: relative;
+    bottom: 5px;
+}
+
+/* form flash */
+.form-flash {
+    background-color: var(--form-flash-background-color);
+    color: var(--form-flash-color);
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: 1px solid var(--form-flash-border-color);
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.form-flash-warning {
+    background-color: var(--form-flash-warning-background-color);
+    color: var(--form-flash-warning-color);
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: 1px solid var(--form-flash-warning-border-color);
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+
+/* form select styles */
+.form-select {
+    width: 100%;
+    height: 40px;
+    padding-left: 0.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.2rem;    
+}
+
+.form-select:hover {    
+    cursor: pointer;
+}
+
+.form-select:focus {
+    border: 2px solid #db7e31;
+}
+
+/* form date type select styles */
+.form-date-select {
+    width: 100%;
+    height: 40px;
+    padding-left: 0.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.2rem;    
+}
+
+.form-date-select:hover {    
+    cursor: pointer;
+}
+
+.form-date-select:focus {
+    border: 2px solid #db7e31;
+}
+
+/* slider */
+.form-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 1rem;
+  }
+  
+  .form-slider:hover {
+    opacity: 1;
+  }
+  
+  .form-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 25px;
+    background: #db7e31;
+    cursor: pointer;
+  }
+  
+  .form-slider::-moz-range-thumb {
+    width: 10px;
+    height: 25px;
+    background: #db7e31;
+    cursor: pointer;
+  }
+
+  /* radio button styles */
+  input[type=radio] {
+     cursor: pointer;
+     margin-right: 0.2rem;
+  }
+
+  #show-list {
+    z-index: 5;
+    position: absolute;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+    overflow-y: scroll;
+    max-height: 200px;
+    font-size: 13px;
+  }
+
+  .show-list-item {
+      background-color: rgb(252, 252, 252);
+      padding: 10px;
+      cursor: pointer;
+  }
+
+  .show-list-item:hover {
+    background-color: rgb(241, 239, 239);
+  }
+
+  .show-list-item-1 {
+    background-color: rgb(252, 252, 252);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.show-list-item-1:hover {
+  background-color: rgb(241, 239, 239);
+}
+
+.show-list-item-2 {
+    background-color: rgb(252, 252, 252);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.show-list-item-2:hover {
+  background-color: rgb(241, 239, 239);
+}
+
+input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.agree-table tr td {
+    font-size: 13px;
+}
